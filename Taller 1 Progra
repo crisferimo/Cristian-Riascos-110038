@@ -1,25 +1,28 @@
-numero = float(input('ingrese un número: '))
-decimal = numero % 1
+#Punto 1 Sin utilizar el comando abs, escribir un programa que calcule e imprima el valor absoluto de cualquier número (sea
+entero o decimal).
 
-if numero < 0 and not decimal:
-    numero = int(numero)
-    numero = numero*(-1)
-    print('El valor absoluto es: ',numero)
-    
-elif numero >0 and not decimal:
-    numero = int(numero)
-    print('El valor absoluto es: ',numero)
-    
-elif numero < 0 and decimal >= 0:
-    numero = numero*(-1)
-    print('El valor absoluto es: ',numero)
-    
-elif numero > 0 and decimal >=0:
-    print('El valor absoluto es: ',numero)
+valor = float(input('ingrese un número: ')) #%% definimos un valor de entrada
+decimales = valor % 1
 
-elif numero < 0 and decimal == 0:
-    numero = numero*(-1)
-    print('El valor absoluto es: ',numero)
+if valor < 0 and not decimales:
+    valor = int(valor)
+    valor = valor*(-1)
+    print('El valor absoluto es: ',valor)
+    
+elif numero >0 and not decimales:
+    valor = int(valor)
+    print('El valor absoluto es: ',valor)
+    
+elif valor < 0 and decimales >= 0:
+    valor = valor*(-1)
+    print('El valor absoluto es: ',valor)
+    
+elif valor > 0 and decimales >=0:
+    print('El valor absoluto es: ',valor)
+
+elif valor < 0 and decimales == 0:
+    valor = valor*(-1)
+    print('El valor absoluto es: ',valor)
 
     
     
