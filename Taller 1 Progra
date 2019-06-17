@@ -1,0 +1,32 @@
+numero = float(input('ingrese un número: '))
+decimal = numero % 1
+
+if numero < 0 and not decimal:
+    numero = int(numero)
+    numero = numero*(-1)
+    print('El valor absoluto es: ',numero)
+    
+elif numero >0 and not decimal:
+    numero = int(numero)
+    print('El valor absoluto es: ',numero)
+    
+elif numero < 0 and decimal >= 0:
+    numero = numero*(-1)
+    print('El valor absoluto es: ',numero)
+    
+elif numero > 0 and decimal >=0:
+    print('El valor absoluto es: ',numero)
+
+elif numero < 0 and decimal == 0:
+    numero = numero*(-1)
+    print('El valor absoluto es: ',numero)
+
+    
+    
+
+
+
+
+
+
+
